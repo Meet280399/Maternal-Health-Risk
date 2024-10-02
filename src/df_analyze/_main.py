@@ -111,6 +111,7 @@ def main() -> None:
     #     memory = Memory(location=joblib_cache)
 
     df = options.load_df()
+    #target = 'target'
     df, renames = sanitize_names(df, target)
     prog_dirs.save_renames(renames)
 
